@@ -1,0 +1,9 @@
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.util.List;
+
+public interface IChatAula  extends Remote{
+	
+	void sendMenssage(Message msg) throws RemoteException;
+	List<Message> retriveMessage() throws RemoteException;
+}
